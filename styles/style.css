@@ -1,0 +1,99 @@
+/* 🌍 General Page Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🏠 Transparent Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(71, 197, 255, 0.2); /* Light transparent effect */
+  padding: 15px 0;
+  backdrop-filter: blur(10px); /* Blurred background effect */
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+.heading {
+  animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* 🎯 Headings */
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* 📷 Social Media Icons (Positioned at the Bottom) */
+.social {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.social a img {
+  width: 50px;
+  opacity: 0.8;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.social a img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* ✨ Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design (Mobile-Friendly) */
+@media (max-width: 768px) {
+  .heading {
+      width: 90%;
+      padding: 30px;
+  }
+
+  nav a {
+      font-size: 16px;
+  }
+
+  .social {
+      bottom: 20px;
+      gap: 15px;
+  }
+}
