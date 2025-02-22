@@ -1,0 +1,51 @@
+.hi-text {
+    overflow: hidden; /* Hides text until typing starts */
+    text-align: left;
+    border-right: .15em solid white; /* Cursor effect */
+    white-space: nowrap; /* Ensures text stays in one line */
+    width: 0; /* Start with text hidden */
+    letter-spacing: .15em;
+    animation: 
+      typing 2s steps(40, end) forwards, /* Typing animation */
+      blink-caret .75s step-end infinite;
+}
+
+/* About Text (Appears after Hi-Text Finishes) */
+.about-text {
+    overflow: hidden;
+    border-right: .15em solid white; /* Cursor effect */
+    margin-right: auto;
+    white-space: nowrap;
+    width: 0; /* Start with text hidden */
+    letter-spacing: .15em;
+    animation: 
+      typing 3s steps(40, end) 2s forwards, /* Delay until Hi-Text finishes */
+      blink-caret .75s step-end infinite 3.6s;
+}
+
+/* Resume Text (Appears after About-Text Finishes) */
+.resume-text {
+    text-align: left;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0; /* Start with text hidden */
+    margin-right: auto;
+    margin-top: 30px;
+    letter-spacing: .15em;
+    animation: 
+      typing 2s steps(40, end) 5s forwards, /* Delay until About-Text finishes */
+      blink-caret .75s step-end infinite 7.2s;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; } /* Start with no text visible */
+    to { width: 100%; } /* Reveal text progressively */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; } /* Cursor blinks only while typing */
+}
