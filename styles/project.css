@@ -79,15 +79,6 @@
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15);
 }
 
-.project img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .project iframe {
     margin-top: 15px;
     border: none;
