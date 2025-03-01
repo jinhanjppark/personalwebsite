@@ -1,3 +1,14 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
 .hi-text {
     overflow: hidden; /* Hides text until typing starts */
     text-align: left;
@@ -6,7 +17,7 @@
     width: 0; /* Start with text hidden */
     letter-spacing: .15em;
     animation: 
-      typing 2s steps(40, end) forwards, /* Typing animation */
+      typing 2s steps(30, end) forwards, /* Typing animation */
       blink-caret .75s step-end infinite;
 }
 
@@ -19,7 +30,7 @@
     width: 0; /* Start with text hidden */
     letter-spacing: .15em;
     animation: 
-      typing 3s steps(40, end) 2s forwards, /* Delay until Hi-Text finishes */
+      typing 2s steps(40, end) 2s forwards, /* Delay until Hi-Text finishes */
       blink-caret .75s step-end infinite 3.6s;
 }
 
@@ -34,7 +45,7 @@
     margin-top: 30px;
     letter-spacing: .15em;
     animation: 
-      typing 2s steps(40, end) 5s forwards, /* Delay until About-Text finishes */
+      typing 2s 4.2s forwards, /* Delay until About-Text finishes */
       blink-caret .75s step-end infinite 7.2s;
 }
 
