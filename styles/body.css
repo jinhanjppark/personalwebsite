@@ -11,7 +11,6 @@ main {
 
 .hi-text {
     overflow: hidden; 
-    text-align: left;
     border-right: .15em solid white; 
     white-space: nowrap; 
     width: 0;
@@ -34,14 +33,13 @@ main {
 }
 
 .resume-text {
-    text-align: left;
     overflow: hidden;
+    text-align: center;
     border-right: .15em solid white;
     white-space: nowrap;
     width: 0; 
     margin-right: auto;
-    margin-top: 30px;
-    letter-spacing: .15em;
+    margin-top: 10px;
     animation: 
       typing 2s 4.2s forwards,
       blink-caret .75s step-end infinite 7.2s;
