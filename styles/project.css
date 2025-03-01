@@ -4,59 +4,106 @@
     flex-wrap: nowrap; 
     overflow-x: auto; 
     white-space: nowrap; 
-    padding: 20px;
+    padding: 30px 10px;
     gap: 20px; 
     margin-top: 50px; 
+    height: 820px
 }
 
 .project {
     display: inline-block;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #356e00; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(197, 117, 117, 0.1); /* Subtle shadow */
-    min-width: 650px; /* Minimum width for each project box */
-    max-width: 650px; /* Consistent width for all project boxes */
-    min-height: 750px; /* Minimum height for each project box */
+    box-shadow: 0 4px 8px rgba(197, 117, 117, 0.1); 
+    min-width: 650px; 
+    max-width: 650px; 
+    min-height: 650px; 
     text-align: center;
-    margin-bottom: 20px; /* Space below each project box */
-    overflow: hidden; /* Hide overflowing content */
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
-    white-space: normal; /* Allow text to wrap to the next line */
+    overflow: hidden; 
+    margin-bottom: 10px; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
 }
 
-/* Project Title */
+.project p {
+    color: white;
+}
+
 .project h2 {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #222;
+    color: white;
 }
 
-/* Date Range */
 .project h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #333;
+    color: white;
 }
 
-/* Bullet Points */
+.project h4 {
+    color: white;
+}
+
 .project ul {
     text-align: left;
     padding-left: 20px;
+    color: white;
 }
 
 .project li {
     font-size: 1rem;
-    color: #444;
     margin-bottom: 8px;
     line-height: 1.5;
+    color: white;
 }
 
-/* Optional: Add hover effect */
+.project a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #a443ff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
 .project:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15);
+}
+
+.project img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project iframe {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        overflow-x: hidden;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .project {
+        width: 90%;
+        min-height: auto;
+    }
 }

@@ -1,5 +1,3 @@
-
-
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -16,13 +14,11 @@ header {
     width: 100%;
     background: rgba(71, 197, 255, 0.2);
     display: flex;
-    justify-content: space-around; /* Evenly space elements */
+    justify-content: space-around; 
     align-items: center;
     padding: 15px 20px;
 }
 
-
-/* 📌 Footer (Fixed at the Bottom, Evenly Spaced) */
 footer {
     position: fixed; 
     bottom: 0;
@@ -30,8 +26,7 @@ footer {
     background: rgba(71, 197, 255, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
-    justify-content: space-around; /* Evenly space elements */
-    align-items: center;
+    justify-content: space-around; 
     padding: 15px 20px;
 }
 
