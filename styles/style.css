@@ -19,6 +19,22 @@ header {
     padding: 15px 20px;
 }
 
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 0 15px;
+    background: rgba(0, 174, 255, 0.2);
+    border-radius: 8px;
+}
+
+header a:hover {
+    background: rgb(255, 149, 0);
+    transform: scale(1.05);
+}
+
 footer {
     position: fixed; 
     bottom: 0;
@@ -45,4 +61,3 @@ footer {
     transform: scale(1.1);
     opacity: 1;
 }
-
